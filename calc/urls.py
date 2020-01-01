@@ -4,4 +4,5 @@ from calc import views
 
 urlpatterns = [
     path('',views.home),
+    path('images',views.images)
 ]

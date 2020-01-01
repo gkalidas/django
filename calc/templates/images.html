@@ -1,0 +1,18 @@
+{% load static %}
+
+<html>
+    <title>
+        images
+    </title>
+    <body>
+        {% for image in imgs%}
+        <div>
+            <div>
+            This is {{image}}
+        </div>
+
+            <img src ="{% static 'images/'|add:image %}">
+        </div>
+        {% endfor %}
+    </body>
+</html>
